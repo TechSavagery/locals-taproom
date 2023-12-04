@@ -12,20 +12,20 @@ const HeaderComingSoon = () => {
             {/* <!--Logo--> */}
             <Link href="/" className="ptf-navbar-logo">
               <Image
-                width={151}
-                height={146}
+                width={181}
+                height={176}
                 style={{ objectFit: "contain" }}
                 className="black"
-                src="/assets/img/root/logo-dark.png"
+                src="/assets/img/root/locals-taproom-logo-orange-tree.png"
                 alt="logo"
                 loading="lazy"
               />
               <Image
-                width={151}
-                height={146}
+                width={181}
+                height={176}
                 style={{ objectFit: "contain" }}
                 className="white"
-                src="/assets/img/root/logo-white.png"
+                src="/assets/img/root/locals-taproom-logo-orange-tree.png"
                 alt="logo"
                 loading="lazy"
               />

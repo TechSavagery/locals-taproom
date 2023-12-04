@@ -4,7 +4,7 @@ import Newsletter from "../../../components/Newsletter";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Coming Soon || Moonex Portfolio and Agency NextJS Template",
+  title: "Coming Soon || Local's Taproom Avila Beach CA",
 };
 
 const ComingSoon = () => {
@@ -37,7 +37,7 @@ const ComingSoon = () => {
                     data-aos="fade"
                     data-aos-delay="0"
                   >
-                    <h1 className="large-heading">Coming soon</h1>
+                    <h1 className="large-heading">Opening Dec 15th 2023</h1>
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"
@@ -47,8 +47,8 @@ const ComingSoon = () => {
                       className="fz-18 has-3-color"
                       style={{ maxWidth: "37.5rem" }}
                     >
-                      Condimentum ipsum a adipiscing hac dolor set consectetur
-                      urna commodo ut nisl partu convallier ullamcorpe.
+                      Come grab a drink with us on our opening day. We are so
+                      excited to pour you a cold one!
                     </p>
                   </div>
 
@@ -70,8 +70,10 @@ const ComingSoon = () => {
                     data-aos-delay="200"
                   >
                     <p className="fz-24 has-black-color">
-                      Get notify when website launch. <br />
-                      Don’t worry! we not spam.
+                      Subscribe to our email list for special events and
+                      launches!
+                      <br />
+                      Don’t worry! Your email is safe with us.
                     </p>
                     {/* <!--Spacer--> */}
                     <div
@@ -96,7 +98,7 @@ const ComingSoon = () => {
                       <Image
                         width={1200}
                         height={1200}
-                        src="/assets/img/root/coming-soon-logo.png"
+                        src="/assets/img/coming-soon-cta.jpg"
                         alt=""
                         style={{
                           maxWidth: "33.25rem",
