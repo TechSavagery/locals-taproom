@@ -3,15 +3,13 @@
 import React from "react";
 import Image from "next/image";
 const heroContent = {
-  title: "Moonex",
-  subTitle1: " Crafting Digital",
-  subTitle2: "Agency",
-  subTitleDescription1: "Good design mean that",
-  subTitleDescription2: "good business",
-  detailsDescription: `We help our client suceed by creating identities, digital
-    experiences, and printmaterials that communicate clearly,
-    achieve marketing goals & look fantastic Lorem uispum dolor
-    sit amert tunoer poea opefse ceefo goipully.`,
+  title: "Locals Taproom",
+  subTitle1: "Avila Beach",
+  subTitle2: "California",
+  subTitleDescription1: "every sip tells a story,",
+  subTitleDescription2: "every beat sets the rhythm,",
+  subTitleDescription3: "and every face is a familiar one.",
+  detailsDescription: `Welcome to Locals Taproom, where the spirit of community thrives, and the love for local craft is poured into every glass. Nestled in the charming seaside town of Avila Beach, our tavern is not just a bar; it's a vibrant hub created by and for the people who call this coastal haven home.`,
 };
 
 const HeroDefault = () => {
@@ -20,7 +18,7 @@ const HeroDefault = () => {
       <div className="col-xl-9">
         {/* <!--Animated Block--> */}
         <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-          <h1 className="fz-230 fz-130--lg fz-90--md">{heroContent.title}</h1>
+          <h1 className="fz-130 fz-130--lg fz-90--md">{heroContent.title}</h1>
         </div>
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "0.625rem" }}></div>
@@ -59,8 +57,9 @@ const HeroDefault = () => {
         >
           <p
             className="
-                fz-70
-                fz-40--md
+                fz-30
+                fz-20--md
+                fz-2--sm
                 fw-extrabold
                 lh-1p1
                 has-white-color
@@ -68,6 +67,8 @@ const HeroDefault = () => {
           >
             {heroContent.subTitleDescription1} <br />
             {heroContent.subTitleDescription2}
+            <br />
+            {heroContent.subTitleDescription3}
           </p>
         </div>
         {/* <!--Spacer--> */}
@@ -138,25 +139,10 @@ const HeroDefault = () => {
           data-aos-delay="200"
         >
           {/* <!--Mask Image--> */}
-          <div className="ptf-mask-image" style={{ maxWidth: "18.25rem" }}>
-            <Image
-              width={1200}
-              height={1200}
-              style={{ width: "100%", height: "100%" }}
-              className="spin"
-              src="/assets/img/root/home-default/circle-text.png"
-              alt="logo"
-              loading="lazy"
-            />
-            <Image
-              width={1200}
-              height={1200}
-              style={{ width: "100%", height: "100%" }}
-              src="/assets/img/root/home-default/circle-logo.png"
-              alt="logo"
-              loading="lazy"
-            />
-          </div>
+          <div
+            className="ptf-mask-image"
+            style={{ maxWidth: "18.25rem" }}
+          ></div>
         </div>
       </div>
     </div>

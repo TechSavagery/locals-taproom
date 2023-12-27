@@ -4,8 +4,8 @@ $base_font_size: 16px;
 
 :root {
   // Accent colors
-  @include defineColorHSL("--ptf-accent-1", 8, 95%, 57%); // #fa472a
-  @include defineColorHSL("--ptf-accent-2", 8, 75%, 51%); // #df3d23
+  @include defineColorHSL("--ptf-accent-1", 16, 74%, 52%); // #df5929
+  @include defineColorHSL("--ptf-accent-2", 16, 74%, 52%); // #df5929
   @include defineColorHSL("--ptf-accent-3", 80, 100%, 30%); // #669900
   @include defineColorHSL("--ptf-accent-4", 204, 100%, 50%); // #0099ff
 
@@ -42,7 +42,7 @@ $base_font_size: 16px;
   --ptf-transition-duration: 300ms;
   --ptf-transition-easing: ease-in-out;
   // Others
-  --ptf-navbar-height: 132px;
+  --ptf-navbar-height: 90px;
 }
 
 // SCALES

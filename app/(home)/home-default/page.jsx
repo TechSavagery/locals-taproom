@@ -10,10 +10,10 @@ import Footer from "../../../components/footer/Footer";
 import HeaderHomeDefault from "../../../components/header/HeaderHomeDefault";
 import HeroDefault from "../../../components/hero/HeroDefault";
 import Portfolio from "../../../components/portfolio/Portfolio";
-import Approach from "../../../components/service/Approach";
 import ServiceOne from "../../../components/service/ServiceOne";
 import Testimonial from "../../../components/testimonial/Testimonial";
 import Image from "next/image";
+import OnTap from "@/components/service/OnTap";
 
 export const metadata = {
   title: "Home Default || Moonex Portfolio and Agency NextJS Template",
@@ -169,6 +169,7 @@ const HomeDefault = () => {
             {/*=============================================
                 Start Our Approach Section
               ============================================== */}
+              <Brand />
             <section
               className="has-accent-1-background"
               style={{
@@ -191,14 +192,14 @@ const HomeDefault = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading">Our Approach</h2>
+                  <h2 className="h1 large-heading">On Tap</h2>
                 </div>
                 {/* <!--Spacer--> */}
                 <div
                   className="ptf-spacer"
                   style={{ "--ptf-xxl": "7.5rem", "--ptf-md": " 3.75rem" }}
                 ></div>
-                <Approach />
+                <OnTap />
               </div>
               {/* <!--Spacer--> */}
               <div
@@ -225,7 +226,7 @@ const HomeDefault = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h2 className="h1 large-heading">Moonex’s Partners</h2>
+                      {" "}
                     </div>
                     {/* <!--Spacer--> */}
                     <div
@@ -234,119 +235,8 @@ const HomeDefault = () => {
                     ></div>
                   </div>
                 </div>
-                {/* End .row */}
-                <Brand />
-                <div className="row">
-                  <div className="col-12">
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
-                    ></div>
-                    {/* <!--Divider--> */}
-                    <div className="ptf-divider"></div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "6.25rem", "--ptf-md": "3.125rem" }}
-                    ></div>
-                  </div>
-                </div>
-                {/* End .row */}
 
-                <Counter />
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-            </section>
 
-            {/*=============================================
-                Start Jaralax Testimonial Section
-              ============================================== */}
-            <section
-              className="jarallax jarallax-img"
-              style={{
-                backgroundImage: `url("/assets/img/about-us-testimonial-background.png")`,
-              }}
-            >
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "12.5rem", "--ptf-md": "6.25rem" }}
-              ></div>
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-xl-4">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <Image
-                        width={1200}
-                        height={1200}
-                        style={{ width: "100%", height: "100%" }}
-                        src="/assets/img/root/quote.png"
-                        alt=""
-                        loading="lazy"
-                      />
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xl": "3.75rem" }}
-                    ></div>
-                  </div>
-                  <div className="col-xl-8">
-                    <Testimonial />
-                  </div>
-                </div>
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "12.5rem", "--ptf-md": "6.25rem" }}
-              ></div>
-            </section>
-
-            {/*=============================================
-                Start Award Section
-              ============================================== */}
-            <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "11.875rem", "--ptf-md": "5.9375rem" }}
-              ></div>
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-lg-4">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1 large-heading">
-                        Our
-                        <br />
-                        Awards
-                      </h2>
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-lg": "3.75rem" }}
-                    ></div>
-                  </div>
-                  <div className="col-lg-8">
-                    <Award />
-                  </div>
-                </div>
               </div>
               {/* <!--Spacer--> */}
               <div

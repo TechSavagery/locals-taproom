@@ -166,9 +166,12 @@
   }
 
   section:first-of-type {
-    background-image: url(../../img/home/default/main-image.png);
-    background-repeat: no-repeat;
-    background-position: calc(50vw - 100px) calc(50% + 150px);
+    @media (min-width: 992px) {
+      background-image: url(../../img/home/default/hero-image-film.png);
+      background-repeat: no-repeat;
+      background-position: calc(50vw - 100px) calc(50% + 150px);
+      /* add other desktop-specific styles if needed */
+    }
   }
 }
 

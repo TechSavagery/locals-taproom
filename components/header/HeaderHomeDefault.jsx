@@ -48,7 +48,7 @@ const HeaderHomeDefault = () => {
                   height={146}
                   style={{ objectFit: "contain" }}
                   className="black"
-                  src="/assets/img/root/logo-dark.png"
+                  src="/assets/img/root/locals-logo-dark.png"
                   alt="logo"
                   loading="lazy"
                 />
@@ -57,7 +57,7 @@ const HeaderHomeDefault = () => {
                   height={146}
                   style={{ objectFit: "contain" }}
                   className="white"
-                  src="/assets/img/root/logo-white.png"
+                  src="/assets/img/root/locals-taproom-logo-white.png"
                   alt="logo"
                   loading="lazy"
                 />
@@ -70,7 +70,7 @@ const HeaderHomeDefault = () => {
               {/* <!--Buttons--> */}
 
               {/* <!--Navbar Search--> */}
-              <div
+              {/* <div
                 className={
                   click ? "ptf-navbar-search is-open" : "ptf-navbar-search"
                 }
@@ -86,7 +86,7 @@ const HeaderHomeDefault = () => {
                   <i className="lnir lnir-search-alt"></i>
                   <i className="lnir lnir-close"></i>
                 </div>
-              </div>
+              </div> */}
               {/* <!--Offcanvas Menu Toggle--> */}
 
               <div
