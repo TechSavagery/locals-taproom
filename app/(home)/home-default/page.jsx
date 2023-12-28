@@ -117,7 +117,9 @@ const HomeDefault = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading">OUR STORY</h1>
+                      <h1  className="large-heading">
+                        OUR STORY
+                      </h1>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -154,7 +156,7 @@ const HomeDefault = () => {
                         flavors, a testament to the incredible talent found in
                         our own backyard.
                       </p>
-                      <p className="fz-18">
+                      <p id="story" className="fz-18">
                         Step into Locals Taproom, and you'll be transported to a
                         time where the surf was king, and the vibes were pure
                         70s and 80s retro cool. The aesthetic is a nod to the
@@ -217,7 +219,6 @@ const HomeDefault = () => {
                       style={{ "--ptf-md": "1.875rem" }}
                     ></div>
                     {/* <!--Animated Block--> */}
-
                   </div>
                 </div>
                 {/* <!--Spacer--> */}
@@ -247,9 +248,9 @@ const HomeDefault = () => {
               ============================================== */}
             <Brand />
             <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "9.5rem" }}
-              ></div>
+              className="ptf-spacer"
+              style={{ "--ptf-xxl": "10rem", "--ptf-md": "9.5rem" }}
+            ></div>
             <section
               className="has-accent-1-background"
               style={{
@@ -354,11 +355,6 @@ const HomeDefault = () => {
                   </div>
                 </div>
               </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
             </section>
 
             {/*=============================================

@@ -6,10 +6,12 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
-import {portfolioContent} from '../../data/works'
+import { portfolioContent } from "../../data/works";
 
 const Portfolio = () => {
   const settings = {
+    autoplay: true,
+    autoplaySpeed: 2000,
     dots: false,
     arrow: true,
     infinite: true,
@@ -17,13 +19,14 @@ const Portfolio = () => {
     slidesToShow: 3,
     centerPadding: "0",
     slidesToScroll: 1,
-    autoplay: false,
     centerMode: true,
     responsive: [
       {
         breakpoint: 991,
         settings: {
           slidesToShow: 2,
+          autoplaySpeed: 2000,
+          autoplay: true,
           dots: true,
           centerMode: false,
         },
@@ -31,6 +34,8 @@ const Portfolio = () => {
       {
         breakpoint: 576,
         settings: {
+          autoplay: true,
+          autoplaySpeed: 2000,
           slidesToShow: 1,
           dots: true,
         },
@@ -47,14 +52,17 @@ const Portfolio = () => {
             <article className="ptf-work ptf-work--style-3" key={i}>
               <div className="ptf-work__media">
                 <Link
-                  href={`/works/${item.id
-                   }`}
+                  href={`/works/${item.id}`}
                   className="ptf-work__link"
                 ></Link>
                 <Image
-                      width={1200}
-                      height={1200}
-                      style={{width : '100%' , height: '100%'}} src={item.img} alt="work" loading="lazy" />
+                  width={1200}
+                  height={1200}
+                  style={{ width: "100%", height: "650px" }}
+                  src={item.img}
+                  alt="work"
+                  loading="lazy"
+                />
               </div>
               <div className="ptf-work__meta">
                 {/* <div className="ptf-work__category">{item.categorie}</div> */}

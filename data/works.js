@@ -2,31 +2,37 @@
 export const portfolioContent = [
     {
       id:1 ,
-      img: "/assets/img/portfolio/work-1.png",
+      img: "/assets/img/portfolio/dranks.jpg",
       categorie: "UI/UX",
       title: "Taskly Dashboard",
     },
     {
       id:2 ,
-      img: "/assets/img/portfolio/work-2.png",
+      img: "/assets/img/portfolio/beach.jpg",
       categorie: "Product",
       title: "Film & Art Festival",
     },
     {
       id:3 ,
-      img: "/assets/img/portfolio/work-3.png",
+      img: "/assets/img/portfolio/water.jpg",
       categorie: "Branding, Packaging",
       title: "Dark Wishky Wine",
     },
     {
       id:4 ,
-      img: "/assets/img/portfolio/work-4.png",
+      img: "/assets/img/portfolio/surf.jpg",
+      categorie: "Illustration",
+      title: "Swiss Style Poster",
+    },
+    {
+      id:4 ,
+      img: "/assets/img/portfolio/surf-2.jpg",
       categorie: "Illustration",
       title: "Swiss Style Poster",
     },
     {
       id: 5,
-      img: "/assets/img/portfolio/work-5.png",
+      img: "/assets/img/portfolio/foam.jpg",
       categorie: "UI/UX",
       title: "Liarch Architecture Firm",
     },

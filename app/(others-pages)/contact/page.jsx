@@ -1,4 +1,4 @@
-import HeaderDefault from "../../../components/header/HeaderDefault";
+import HeaderHomeDefault from "../../../components/header/HeaderHomeDefault";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import Social from "../../../components/social/Social";
@@ -12,7 +12,7 @@ export const metadata = {
 const Contact = () => {
   return (
     <>
-      <HeaderDefault />
+      <HeaderHomeDefault />
       {/* End Header */}
 
       <div className="ptf-main">

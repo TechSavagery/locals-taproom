@@ -10,7 +10,7 @@ const OnTap = () => {
       }}
     >
       {onTapContent.map((val, i) => (
-        <div className="col-xl-4 col-lg-6" key={i}>
+        <div id={`on-tap-${val.anchor}`} className="col-xl-4 col-lg-6" key={i}>
           {/* <!--Animated Block--> */}
           <div
             className="ptf-animated-block"

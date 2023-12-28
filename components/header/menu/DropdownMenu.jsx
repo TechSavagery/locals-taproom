@@ -8,7 +8,7 @@ const menuContent = [
   {
     name: "Home",
     //activeClass: "sf-with-ul",
-    page: "home",
+    page: "/",
     //menuClass: "two-columns current-menu-item",
     dropDownItems: [
       // {
@@ -47,7 +47,7 @@ const menuContent = [
   },
   {
     name: "Our Story",
-    page: "#",
+    page: "/#our-story",
     activeClass: "",
     menuClass: "",
     dropDownItems: [
@@ -82,35 +82,41 @@ const menuContent = [
     dropDownItems: [
       {
         name: "Man Rock",
-        routerPath: "#on-tap-man-rock",
+        routerPath: "/#on-tap-man-rock",
       },
       {
         name: "There Does Not Exist",
-        routerPath: "#on-tap-there-does-not-exist",
+        routerPath: "/#on-tap-there-does-not-exist",
       },
       {
         name: "Humdinger",
-        routerPath: "#on-tap-humdinger",
+        routerPath: "/#on-tap-humdinger",
       },
       {
         name: "Liquid Gravity",
-        routerPath: "#on-tap-liquid-gravity",
+        routerPath: "/#on-tap-liquid-gravity",
       },
       {
         name: "Matthew's Vineyard",
-        routerPath: "#on-tap-matthews-vineyard",
+        routerPath: "/#on-tap-matthews-vineyard",
       },
     ],
+  },
+  {
+    name: "Amenities",
+    activeClass: "",
+    menuClass: "",
+    page: "/#amenities",
+
+    dropDownItems: [],
   },
   {
     name: "Merch",
     activeClass: "",
     menuClass: "",
-    page: "blog",
+    page: "/#merch",
 
-    dropDownItems: [
-  
-    ],
+    dropDownItems: [],
   },
   {
     name: "Contact Us",
@@ -182,7 +188,7 @@ const DropdownMenu = () => {
     <ul className="sf-menu">
       {menuContent.map((item, i) => (
         <li className={`menu-item-has-children ${item.menuClass}`} key={i}>
-          <a href="#" className={item.activeClass}>
+          <a href={item.page} className={item.activeClass}>
             <span className={item.page == currentPage ? "active-page" : ""}>
               {item.name}
             </span>

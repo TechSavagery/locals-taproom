@@ -93,21 +93,29 @@ const menuContent = [
       },
       {
         name: "Humdinger",
-        routerPath: "/on-tap-humdinger",
+        routerPath: "/#on-tap-humdinger",
       },
       {
         name: "Liquid Gravity",
-        routerPath: "/on-tap-liquid-gravity",
+        routerPath: "/#on-tap-liquid-gravity",
       },
       {
         name: "Matthew's Vineyard",
-        routerPath: "/on-tap-matthews-vineyard",
+        routerPath: "/#on-tap-matthews-vineyard",
       },
     ],
   },
   {
+    name: "Amenities",
+    activeClass: "",
+    menuClass: "",
+    page: "/#amenities",
+
+    dropDownItems: [],
+  },
+  {
     name: "Merch",
-    page: "others",
+    page: "/#merch",
     dropDownItems: [
       // {
       //   name: "About Us",
@@ -150,6 +158,14 @@ const menuContent = [
       //   routerPath: "/coming-soon",
       // },
     ],
+  },
+  {
+    name: "Contact Us",
+    activeClass: "",
+    menuClass: "",
+    page: "/contact",
+
+    dropDownItems: [],
   },
 ];
 

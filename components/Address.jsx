@@ -10,11 +10,14 @@ const Address = () => {
         <h5 className="fz-14 text-uppercase has-3-color fw-normal">Address</h5>
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
-        <p className="fz-20 lh-1p5 has-black-color">
-          90 San Miguel Street
-          <br />
-          CA 93420
-        </p>
+        <a href="https://maps.app.goo.gl/acGSwyNgh3hjCNzP7">
+          {" "}
+          <p className="fz-20 lh-1p5 has-black-color">
+            90 San Miguel Street
+            <br />
+            CA 93420
+          </p>
+        </a>
       </div>
 
       {/* <!--Spacer--> */}
@@ -27,7 +30,7 @@ const Address = () => {
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
           <a href="mailto:info@localstaproomavila.com">
-          info@localstaproomavila.com
+            info@localstaproomavila.com
             <br />
           </a>
         </p>

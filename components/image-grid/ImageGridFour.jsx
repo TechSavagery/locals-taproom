@@ -10,8 +10,8 @@ const ImageGridFour = ({ img }) => {
         {/* <!--Simple Image--> */}
         <div className="ptf-simple-image">
           <Item
-            original="/assets/img/locals-our-story.png"
-            thumbnail="/assets/img/locals-our-story.png"
+            original="/assets/img/locals-our-story-2.png"
+            thumbnail="/assets/img/locals-our-story-2.png"
             width={1520}
             height={760}
           >
@@ -20,7 +20,7 @@ const ImageGridFour = ({ img }) => {
                 width={1200}
                 height={1200}
                 style={{ width: "100%", height: "100%" }}
-                src="/assets/img/locals-our-story.png"
+                src="/assets/img/locals-our-story-2.png"
                 alt="service"
                 role="button"
                 ref={ref}

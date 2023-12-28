@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import Award from "../components/award/Award";
 
-import Blog from "../components/blog/Blog";
+import Merch from "../components/merch/Merch";
 import Brand from "../components/brand/Brand";
 import Counter from "../components/counter/Counter";
 import CopyRight from "../components/footer/copyright/CopyRight";
@@ -56,6 +56,7 @@ const HomeDefault = () => {
             <section>
               {/* <!--Spacer--> */}
               <div
+                id="amenities"
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
@@ -105,6 +106,7 @@ const HomeDefault = () => {
             <section>
               {/* <!--Spacer--> */}
               <div
+                id="our-story"
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
@@ -261,6 +263,7 @@ const HomeDefault = () => {
             >
               {/* <!--Spacer--> */}
               <div
+                id="on-tap"
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
@@ -293,10 +296,11 @@ const HomeDefault = () => {
             <section>
               {/* <!--Spacer--> */}
               <div
+                id="merch"
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
-              <div id="merch" className="container-xxl">
+              <div className="container-xxl">
                 <div className="row">
                   <h1 className="large-heading">MERCH</h1>
                   <div className="col-12">
@@ -346,7 +350,7 @@ const HomeDefault = () => {
                       "--bs-gutter-y": "7.5rem",
                     }}
                   >
-                    <Blog />
+                    <Merch />
                   </div>
                 </div>
               </div>
