@@ -2,49 +2,50 @@
 
 import React from "react";
 import Link from "next/link";
+import Address from '../../components/Address'
 
 const linkList = [
   {
-    itemName: "Faqs",
+    itemName: "Home",
     link: "/",
   },
   {
-    itemName: "Term & Conditions",
+    itemName: "Our Story",
     link: "/",
   },
   {
-    itemName: "Privacy Policy",
+    itemName: "On Tap",
     link: "/",
   },
   {
-    itemName: "Help",
+    itemName: "Merch",
     link: "/",
   },
   {
-    itemName: "Affiliate",
-    link: "/",
-  },
-  {
-    itemName: "Services",
+    itemName: "Contact US",
     link: "/",
   },
 ];
 
 const Product = [
   {
-    itemName: "Works",
+    itemName: "Man Rock",
     link: "/",
   },
   {
-    itemName: "About",
+    itemName: "There Does Not Exist",
     link: "/",
   },
   {
-    itemName: "News",
+    itemName: "Humdinger",
     link: "/",
   },
   {
-    itemName: "Contact",
+    itemName: "Liquid Gravity",
+    link: "/",
+  },
+  {
+    itemName: "Matthew's Vineard",
     link: "/",
   },
 ];
@@ -55,27 +56,7 @@ const Footer = () => {
       <div className="col-12 col-xl-6">
         {/* <!--Animated Block--> */}
         <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-          <div
-            className="ptf-footer-heading has-black-color"
-            style={{ maxWidth: "37.5rem" }}
-          >
-            Boost Your Business Up To High Level
-          </div>
-
-          <div className="ptf-footer-heading has-black-color">
-            Start by
-            <Link
-              className="has-accent-1 text-decoration-underline"
-              href="/contact"
-            >
-              Saying Hi!
-            </Link>
-          </div>
-
-          <p className="fz-24">90 Fairground Rd, FL 3290, United States</p>
-          <a className="fz-40 has-black-color" href="mailto:hello@moonex.co">
-            hello@moonex.co
-          </a>
+          <Address/>
         </div>
       </div>
       <div className="col-12 col-md-6 col-xl-3">
@@ -105,7 +86,7 @@ const Footer = () => {
           data-aos-delay="200"
         >
           <div className="ptf-widget ptf-widget-text">
-            <h4 className="ptf-widget-title">Product</h4>
+            <h4 className="ptf-widget-title">On Tap</h4>
             <div className="ptf-widget ptf-widget-links has-black-color">
               <ul>
                 {Product.map((val, i) => (

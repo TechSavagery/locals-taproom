@@ -3,26 +3,26 @@
 import React from "react";
 
 const SocialShare = [
-  {
-    iconName: "socicon-twitter",
-    link: "https://twitter.com/",
-    iconClass: "twitter",
-  },
-  {
-    iconName: "socicon-facebook",
-    link: "https://www.facebook.com/",
-    iconClass: "facebook",
-  },
+  // {
+  //   iconName: "socicon-twitter",
+  //   link: "https://twitter.com/",
+  //   iconClass: "twitter",
+  // },
+  // {
+  //   iconName: "socicon-facebook",
+  //   link: "https://www.facebook.com/",
+  //   iconClass: "facebook",
+  // },
   {
     iconName: "socicon-instagram",
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/locals.taproom",
     iconClass: "instagram",
   },
-  {
-    iconName: "socicon-pinterest",
-    link: "https://www.pinterest.com/",
-    iconClass: "pinterest",
-  },
+  // {
+  //   iconName: "socicon-pinterest",
+  //   link: "https://www.pinterest.com/",
+  //   iconClass: "pinterest",
+  // },
 ];
 const Social = () => {
   return (

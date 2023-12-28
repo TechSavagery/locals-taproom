@@ -1,197 +1,228 @@
-import HeaderPreview from "../components/header/HeaderPreview";
-import BlogDemo from "../components/preview/BlogDemo";
-import MainDemo from "../components/preview/MainDemo";
-import PortfolioDemo from "../components/preview/PortfolioDemo";
-import OthersPages from "../components/preview/OthersPages";
+import Link from "next/link";
+
+import Award from "../components/award/Award";
+
+import Blog from "../components/blog/Blog";
+import Brand from "../components/brand/Brand";
+import Counter from "../components/counter/Counter";
+import CopyRight from "../components/footer/copyright/CopyRight";
+import Footer from "../components/footer/Footer";
+import HeaderHomeDefault from "../components/header/HeaderHomeDefault";
+import HeroDefault from "../components/hero/HeroDefault";
+import Portfolio from "../components/portfolio/Portfolio";
+import ServiceOne from "../components/service/ServiceOne";
+import Testimonial from "../components/testimonial/Testimonial";
+import Image from "next/image";
+import OnTap from "@/components/service/OnTap";
+import ImageGridFour from "../components/image-grid/ImageGridFour";
 
 export const metadata = {
-  title: "Preview || Moonex Portfolio and Agency NextJS Template",
+  title: "Home Default || Moonex Portfolio and Agency NextJS Template",
 };
 
-const Preview = () => {
+const HomeDefault = () => {
   return (
-    <div className="ptf-site-wrapper animsition">
+    <div className="ptf-site-wrapper animsition  ptf-is--home-default">
+      {/* End Page SEO Content */}
+
+      <HeaderHomeDefault />
+      {/* End Header Default */}
+
       <div className="ptf-site-wrapper__inner">
-        {/* <!--Header--> */}
-        <HeaderPreview />
-        <main className="ptfmain">
-          <article
-            className="ptf-page ptf-page--intro"
-            style={{
-              backgroundImage: `url(${
-                "" + "/assets/img/root/intro/bubble-1.png"
-              })`,
-            }}
-          >
+        <div className="ptf-main">
+          <div className="ptf-page ptf-page--home-default">
+            {/*=============================================
+                Start Hero Section
+              ============================================== */}
+            <section className="has-accent-1-background">
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "15rem" }}
+              ></div>
+              <div className="container-xxl">
+                <HeroDefault />
+              </div>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "12.5rem", "--ptf-md": "6.25rem" }}
+              ></div>
+            </section>
+
+            {/*=============================================
+                Start Service Section
+              ============================================== */}
+            <section>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+              ></div>
+              <div className="container-xxl">
+                <div className="row">
+                  <div className="col-lg-3">
+                    {/* <!--Animated Block--> */}
+                    <div
+                      className="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="0"
+                    >
+                      <h2 className="h1 large-heading">Amenities</h2>
+                      {/* <!--Spacer--> */}
+                      <div
+                        className="ptf-spacer"
+                        style={{ "--ptf-xxl": "2.5rem" }}
+                      ></div>
+                      <p className="fz-18">
+                        Step into Locals Taproom, and you'll be transported to a
+                        time where the surf was king, and the vibes were pure
+                        70s and 80s retro cool. The aesthetic is a nod to the
+                        golden era of surfing, with every detail carefully
+                        curated to evoke a sense of nostalgia and laid-back joy.
+                      </p>
+                    </div>
+                    {/* <!--Spacer--> */}
+                    <div
+                      className="ptf-spacer"
+                      style={{
+                        "--ptf-lg": "4.375rem",
+                        "--ptf-md": "2.1875rem",
+                      }}
+                    ></div>
+                  </div>
+                  <div className="col-lg-8 offset-lg-1">
+                    <ServiceOne />
+                  </div>
+                </div>
+              </div>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+              ></div>
+            </section>
+            <section>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+              ></div>
+              <div className="container-xxl">
+                <div className="row">
+                  <div className="col-xl-9">
+                    {/* <!--Animated Block--> */}
+                    <div
+                      className="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="0"
+                    >
+                      <h1 className="large-heading">OUR STORY</h1>
+                      {/* <!--Spacer--> */}
+                      <div
+                        className="ptf-spacer"
+                        style={{ "--ptf-xxl": "2.5rem" }}
+                      ></div>
+                      <p className="fz-18">
+                        Welcome to Locals Taproom, where the spirit of community
+                        thrives, and the love for local craft is poured into
+                        every glass. Nestled in the charming seaside town of
+                        Avila Beach, our tavern is not just a bar; it's a
+                        vibrant hub created by and for the people who call this
+                        coastal haven home.
+                      </p>
+                      <p className="fz-18">
+                        Meet the minds behind Locals Taproom – two proud San
+                        Luis Obispo locals deeply rooted in the fabric of this
+                        community. With years of shared memories and a passion
+                        for fostering local connections, they embarked on a
+                        journey to bring something special to their fellow
+                        residents.
+                      </p>
+                      <p className="fz-18">
+                        At Locals Taproom, we take pride in showcasing the rich
+                        diversity of the local craft beer scene. Our taps
+                        feature a rotating selection of brews from nearby
+                        microbreweries, ensuring that our patrons experience the
+                        best flavors that the region has to offer. By doing so,
+                        we not only cater to our loyal regulars but also act as
+                        ambassadors for the local craft beer industry, inviting
+                        tourists to savor the unique tastes of our coastal
+                        community. But our commitment doesn't stop there. We've
+                        also uncorked the finest local wines to add to your
+                        experience. Our menu is a celebration of the region's
+                        flavors, a testament to the incredible talent found in
+                        our own backyard.
+                      </p>
+                      <p className="fz-18">
+                        Step into Locals Taproom, and you'll be transported to a
+                        time where the surf was king, and the vibes were pure
+                        70s and 80s retro cool. The aesthetic is a nod to the
+                        golden era of surfing, with every detail carefully
+                        curated to evoke a sense of nostalgia and laid-back joy.
+                        Vinyl spins on the turntable, setting the soundtrack for
+                        your evening. And here's the best part – you get to
+                        choose the music from our extensive record collection,
+                        making every visit a personalized trip down memory lane.
+                      </p>
+                      <p className="fz-18">
+                        But Locals Taproom isn't just about good drinks and good
+                        tunes; it's about fostering a sense of community and
+                        collaboration. We believe in the power of local talent
+                        and aim to be a platform for artists, musicians, beer
+                        makers, and small businesses to shine. From art exhibits
+                        to live performances, we're dedicated to supporting the
+                        growth of our community, creating a space where
+                        connections are forged, and creativity flourishes. Join
+                        us at Locals Taproom, where every sip tells a story,
+                        every beat sets the rhythm, and every face is a familiar
+                        one. We're not just a tavern; we're a gathering place
+                        for friends, neighbors, and kindred spirits. Cheers to
+                        the locals, the visitors, and the shared moments that
+                        make our community truly special.
+                      </p>
+                    </div>
+                    {/* <!--Spacer--> */}
+                    <div
+                      className="ptf-spacer"
+                      style={{ "--ptf-xxl": "6.25rem", "--ptf-md": "3.125rem" }}
+                    ></div>
+                  </div>
+                  <div className="col-lg-12">
+                    {/* <!--Animated Block--> */}
+                    <ImageGridFour />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/*=============================================
+                Start Portfolio Section
+              ============================================== */}
             <section>
               <div className="container-xxl">
-                {/* <!--Divider--> */}
-                <div
-                  className="ptf-divider"
-                  style={{
-                    "--ptf-height": "1px",
-                    "--ptf-color": "var(--ptf-color-14)",
-                  }}
-                ></div>
-              </div>
-            </section>
-
-            <section id="demo">
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-xl-8">
+                <div className="row align-items-center">
+                  <div className="col-12 col-md-9">
                     {/* <!--Animated Block--> */}
                     <div
                       className="ptf-animated-block"
                       data-aos="fade"
                       data-aos-delay="0"
-                    >
-                      <h2 className="h1">
-                        Get started with a pre-made website
-                      </h2>
-                    </div>
+                    ></div>
+                  </div>
+                  <div className="col-12 col-md-3 text-md-end">
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"
-                      style={{ "--ptf-xxl": "1.875rem" }}
+                      style={{ "--ptf-md": "1.875rem" }}
                     ></div>
                     {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <p className="fz-18 has-3-color">
-                        No-clutter demos with only necessasry design elements
-                        for maximum attention to your work.
-                      </p>
-                    </div>
                   </div>
                 </div>
                 {/* <!--Spacer--> */}
                 <div
                   className="ptf-spacer"
-                  style={{ "--ptf-xxl": "5.625rem", "--ptf-md": "2.8125rem" }}
-                ></div>
-                <MainDemo />
-              </div>
-
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-            </section>
-
-            <section>
-              <div className="container-xxl">
-                {/* <!--Divider--> */}
-                <div
-                  className="ptf-divider"
-                  style={{
-                    "--ptf-height": "1px",
-                    "--ptf-color": "var(--ptf-color-14)",
-                  }}
-                ></div>
-              </div>
-            </section>
-
-            <section id="portfolio">
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-xl-8">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1">Practical Project Showcases</h2>
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "1.875rem" }}
-                    ></div>
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <p className="fz-18 has-3-color">
-                        Realistic variety of single project & case-study pages
-                        with attention to design detail & functionality.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "5.625rem", "--ptf-md": "2.8125rem" }}
-                ></div>
-                <PortfolioDemo />
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-            </section>
-
-            <section id="blog">
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-xl-8">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1">Share your insights with Blog</h2>
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "1.875rem" }}
-                    ></div>
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <p className="fz-18 has-3-color">
-                        Not only help you SEO good, increase the traffic for
-                        website, it’s a place that you share the stories,
-                        insights around design, career or connect with your
-                        fans, your fellows.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "5.625rem", "--ptf-md": "2.8125rem" }}
+                  style={{ "--ptf-xxl": "6.25rem" }}
                 ></div>
                 {/* <!--Animated Block--> */}
                 <div
@@ -200,14 +231,55 @@ const Preview = () => {
                   data-aos-delay="0"
                 >
                   {/* <!--Content Slider--> */}
-                  <div className="ptf-content-slider swiper-container blog-container">
-                    <div className="swiper-wrapper">
-                      <BlogDemo />
-                    </div>
-                  </div>
+                  <Portfolio />
                 </div>
               </div>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "9.5rem" }}
+              ></div>
+            </section>
 
+            {/*=============================================
+                Start Our Approach Section
+              ============================================== */}
+            <Brand />
+            <div
+              className="ptf-spacer"
+              style={{ "--ptf-xxl": "10rem", "--ptf-md": "9.5rem" }}
+            ></div>
+            <section
+              className="has-accent-1-background"
+              style={{
+                backgroundImage: `url(${
+                  "" + "/assets/img/root/service-bubble.png"
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "100% calc(100% + 120px)",
+              }}
+            >
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+              ></div>
+              <div className="container-xxl">
+                {/* <!--Animated Block--> */}
+                <div
+                  className="ptf-animated-block"
+                  data-aos="fade"
+                  data-aos-delay="0"
+                >
+                  <h2 className="h1 large-heading">On Tap</h2>
+                </div>
+                {/* <!--Spacer--> */}
+                <div
+                  className="ptf-spacer"
+                  style={{ "--ptf-xxl": "7.5rem", "--ptf-md": " 3.75rem" }}
+                ></div>
+                <OnTap />
+              </div>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
@@ -215,119 +287,97 @@ const Preview = () => {
               ></div>
             </section>
 
-            <section id="pages">
+            {/*=============================================
+                Start Brand and Counterup Section
+              ============================================== */}
+            <section>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "13rem", "--ptf-md": "10rem" }}
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
-
-              <div className="container-xxl">
+              <div id="merch" className="container-xxl">
                 <div className="row">
-                  <div className="col-xl-8">
+                  <h1 className="large-heading">MERCH</h1>
+                  <div className="col-12">
                     {/* <!--Animated Block--> */}
                     <div
                       className="ptf-animated-block"
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h2 className="h1">Necessary Others Pages</h2>
+                      {" "}
                     </div>
                     {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "1.875rem" }}
-                    ></div>
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <p className="fz-18 has-3-color">
-                        Realistic variety of single project & case-study inner
-                        pages with attention to design detail & functionality.
-                      </p>
-                    </div>
                   </div>
                 </div>
-                {/* End .row */}
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "6.25rem" }}
-                ></div>
-                <OthersPages />
               </div>
-
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
             </section>
-          </article>
-        </main>
-      </div>
 
-      {/* <!--Footer--> */}
-      <footer
-        className="ptf-footer ptf-footer--landing"
-        style={{
-          backgroundImage: `url(${"" + "/assets/img/root/intro/bubble-3.png"})`,
-        }}
-      >
-        {/* <!--Spacer--> */}
-        <div
-          className="ptf-spacer"
-          style={{ "--ptf-xxl": "18.125rem", "--ptf-md": "9.0625rem" }}
-        ></div>
-        <div className="container-xxl text-center">
-          <div className="row">
-            <div className="col-xl-6 offset-xl-3">
-              <h2 className="h1">Purchase For Only</h2>
+            <section>
+              <div className="container-xxl">
+                {/* <!--Divider--> */}
+                <div className="ptf-divider"></div>
+              </div>
+            </section>
+
+            <section>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "1.25rem" }}
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
-              <div className="ptf-footer__price">
-                <span>$</span>12
+              <div className="container-xxl">
+                {/* <!--Animated Block--> */}
+                <div
+                  className="ptf-animated-block"
+                  data-aos="fade"
+                  data-aos-delay="0"
+                >
+                  <div
+                    className="row"
+                    style={{
+                      "--bs-gutter-x": "3.75rem",
+                      "--bs-gutter-y": "7.5rem",
+                    }}
+                  >
+                    <Blog />
+                  </div>
+                </div>
               </div>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "0.625rem" }}
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
-              {/* <!--Button--> */}
-              <a
-                className="ptf-btn ptf-btn--success"
-                href="https://themeforest.net/item/moonex-nextjs-agency-nextjs-portfolio-template/46179136"
-                target="_blank"
-              >
-                Purchase Now
-              </a>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": " 4.375rem" }}
-              ></div>
-              <p className="fz-18 has-3-color">
-                Limited time offer. The originally price will back after end of{" "}
-                <br />
-                promotion. Don't Miss Out!!!
-              </p>
-            </div>
+            </section>
+
+            {/*=============================================
+                End Blog Section
+              ============================================== */}
           </div>
         </div>
-        {/* <!--Spacer--> */}
-        <div
-          className="ptf-spacer"
-          style={{ "--ptf-xxl": "16.25rem", "--ptf-md": "8.125rem" }}
-        ></div>
-      </footer>
+        {/* End .ptf-main */}
+
+        {/* <!--Footer--> */}
+        <footer className="ptf-footer ptf-footer--style-1">
+          <div className="container-xxl">
+            <div className="ptf-footer__top">
+              <Footer />
+            </div>
+            <div className="ptf-footer__bottom">
+              <CopyRight />
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 };
 
-export default Preview;
+export default HomeDefault;

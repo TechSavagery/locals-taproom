@@ -19,10 +19,10 @@ const Contact = () => {
         <div className="ptf-page ptf-page--contact">
           <section>
             {/* <!--Spacer--> */}
-            <div
+            {/* <div
               className="ptf-spacer"
               style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-            ></div>
+            ></div> */}
 
             <div className="container-xxl">
               <div className="row">
@@ -33,10 +33,10 @@ const Contact = () => {
                     data-aos="fade"
                     data-aos-delay="0"
                   >
-                    <h1 className="large-heading">
+                    {/* <h1 className="large-heading">
                       Let's get Contact an <br />
                       estimate
-                    </h1>
+                    </h1> */}
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"

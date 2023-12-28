@@ -57,14 +57,14 @@ const Portfolio = () => {
                       style={{width : '100%' , height: '100%'}} src={item.img} alt="work" loading="lazy" />
               </div>
               <div className="ptf-work__meta">
-                <div className="ptf-work__category">{item.categorie}</div>
-                <h4 className="ptf-work__title">
+                {/* <div className="ptf-work__category">{item.categorie}</div> */}
+                {/* <h4 className="ptf-work__title">
                   <Link
                     href={`/works/${item.id}`}
                   >
                     {item.title}
                   </Link>
-                </h4>
+                </h4> */}
               </div>
             </article>
           ))}

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 
@@ -11,9 +11,9 @@ const Address = () => {
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
-          90 Fairground Rd St FL 3290
+          90 San Miguel Street
           <br />
-          United States
+          CA 93420
         </p>
       </div>
 
@@ -26,11 +26,10 @@ const Address = () => {
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
-          <a href="mailto:hello@moonex.co">
-            hello@moonex.co
+          <a href="mailto:info@localstaproomavila.com">
+          info@localstaproomavila.com
             <br />
           </a>
-          <a href="mailto:career@moonex.co">career@moonex.co</a>
         </p>
       </div>
 
@@ -43,7 +42,7 @@ const Address = () => {
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
-          <a href="tel:+5632356565">+56 3235 65 65</a>
+          <a href="tel:+5632356565">(820) 202-0098</a>
         </p>
       </div>
 

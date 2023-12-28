@@ -3,7 +3,7 @@
 import React from "react";
 import SocialTwo from "../../social/SocialTwo";
 import Image from "next/image";
-const logo = "/assets/img/root/logo-dark.png";
+const logo = "/assets/img/root/locals-taproom-logo-orange-tree.png";
 
 const CopyRight = () => {
   return (
@@ -13,7 +13,7 @@ const CopyRight = () => {
           <Image
             width={1200}
             height={1200}
-            style={{ width: "141px", height: "46px" }}
+            style={{ width: "282px", height: "94px" }}
             src={logo}
             alt="logo"
             loading="lazy"
@@ -22,18 +22,8 @@ const CopyRight = () => {
       </div>
       <div className="col-12 col-md text-md-center text-lg-center">
         <p className="ptf-footer-copyright has-black-color">
-          ©{new Date().getFullYear()}{" "}
-          <span>
-            Moonex by{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              ib-themes
-            </a>
-          </span>
-          . All Rights Reserved.
+          ©{new Date().getFullYear()} <span>Locals Taproom</span>. All Rights
+          Reserved.
         </p>
       </div>
       <div className="col-12 col-lg text-md-center text-lg-end">

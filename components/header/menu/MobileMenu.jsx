@@ -19,136 +19,136 @@ const menuContent = [
     name: "Home",
     page: "home",
     dropDownItems: [
-      {
-        name: "Home Default",
-        routerPath: "/home-default",
-      },
-      {
-        name: "Home Studio",
-        routerPath: "/home-studio",
-      },
-      {
-        name: "Home Agency",
-        routerPath: "/home-agency",
-      },
-      {
-        name: "Home Minimal",
-        routerPath: "/home-minimal",
-      },
-      {
-        name: "Home Dark",
-        routerPath: "/home-dark",
-      },
-      {
-        name: "Home Freelancer",
-        routerPath: "/home-freelancer",
-      },
-      {
-        name: "Home Trending",
-        routerPath: "/home-trending",
-      },
-      {
-        name: "Home Modern",
-        routerPath: "/home-modern",
-      },
+      // {
+      //   name: "Home Default",
+      //   routerPath: "/home-default",
+      // },
+      // {
+      //   name: "Home Studio",
+      //   routerPath: "/home-studio",
+      // },
+      // {
+      //   name: "Home Agency",
+      //   routerPath: "/home-agency",
+      // },
+      // {
+      //   name: "Home Minimal",
+      //   routerPath: "/home-minimal",
+      // },
+      // {
+      //   name: "Home Dark",
+      //   routerPath: "/home-dark",
+      // },
+      // {
+      //   name: "Home Freelancer",
+      //   routerPath: "/home-freelancer",
+      // },
+      // {
+      //   name: "Home Trending",
+      //   routerPath: "/home-trending",
+      // },
+      // {
+      //   name: "Home Modern",
+      //   routerPath: "/home-modern",
+      // },
     ],
   },
   {
-    name: "Portfolio",
+    name: "Our Story",
     page: "works",
     dropDownItems: [
-      {
-        name: "Works Grid",
-        routerPath: "/works-grid",
-      },
-      {
-        name: "Works Masonry",
-        routerPath: "/works-masonry",
-      },
-      {
-        name: "Works Listing",
-        routerPath: "/works-listing",
-      },
-      {
-        name: "Works Carousel",
-        routerPath: "/works-carousel",
-      },
-      {
-        name: "Works Showcase",
-        routerPath: "/works/3",
-      },
+      // {
+      //   name: "Works Grid",
+      //   routerPath: "/works-grid",
+      // },
+      // {
+      //   name: "Works Masonry",
+      //   routerPath: "/works-masonry",
+      // },
+      // {
+      //   name: "Works Listing",
+      //   routerPath: "/works-listing",
+      // },
+      // {
+      //   name: "Works Carousel",
+      //   routerPath: "/works-carousel",
+      // },
+      // {
+      //   name: "Works Showcase",
+      //   routerPath: "/works/3",
+      // },
     ],
   },
   {
-    name: "Blog",
-    page: "blog",
+    name: "On Tap",
+    page: "#",
     dropDownItems: [
       {
-        name: "Blog Grid",
-        routerPath: "/blog-grid",
+        name: "Man Rock",
+        routerPath: "/#on-tap-man-rock",
       },
       {
-        name: "Blog Masonry",
-        routerPath: "/blog-masonry",
+        name: "There Does Not Exist",
+        routerPath: "/#on-tap-there-does-not-exist",
       },
       {
-        name: "Blog Sidebar",
-        routerPath: "/blog-sidebar",
+        name: "Humdinger",
+        routerPath: "/on-tap-humdinger",
       },
       {
-        name: "Blog Details",
-        routerPath: "/blog/2",
+        name: "Liquid Gravity",
+        routerPath: "/on-tap-liquid-gravity",
       },
       {
-        name: "Blog Details Sidebar",
-        routerPath: "/blog-details-sidebar/7",
+        name: "Matthew's Vineyard",
+        routerPath: "/on-tap-matthews-vineyard",
       },
     ],
   },
   {
-    name: "Pages",
+    name: "Merch",
     page: "others",
     dropDownItems: [
-      {
-        name: "About Us",
-        routerPath: "/about-us",
-      },
-      {
-        name: "About Me",
-        routerPath: "/about-me",
-      },
-      {
-        name: "Services",
-        routerPath: "/service",
-      },
-      {
-        name: "Service Details",
-        routerPath: "/service/5",
-      },
-      {
-        name: "Pricing",
-        routerPath: "/pricing",
-      },
-      {
-        name: "Team",
-        routerPath: "/team",
-      },
-      {
-        name: "FAQ",
-        routerPath: "/faq",
-      },
-      {
-        name: "Contact",
-        routerPath: "/contact",
-      },
-      {
-        name: "Page 404",
-        routerPath: "/404",
-      },
-      {
-        name: "Coming Soon",
-        routerPath: "/coming-soon",
-      },
+      // {
+      //   name: "About Us",
+      //   routerPath: "/about-us",
+      // },
+      // {
+      //   name: "About Me",
+      //   routerPath: "/about-me",
+      // },
+      // {
+      //   name: "Services",
+      //   routerPath: "/service",
+      // },
+      // {
+      //   name: "Service Details",
+      //   routerPath: "/service/5",
+      // },
+      // {
+      //   name: "Pricing",
+      //   routerPath: "/pricing",
+      // },
+      // {
+      //   name: "Team",
+      //   routerPath: "/team",
+      // },
+      // {
+      //   name: "FAQ",
+      //   routerPath: "/faq",
+      // },
+      // {
+      //   name: "Contact",
+      //   routerPath: "/contact",
+      // },
+      // {
+      //   name: "Page 404",
+      //   routerPath: "/404",
+      // },
+      // {
+      //   name: "Coming Soon",
+      //   routerPath: "/coming-soon",
+      // },
     ],
   },
 ];
@@ -202,19 +202,8 @@ const MobileMenu = () => {
 
       <div className="ptf-offcanvas-menu__footer">
         <p className="ptf-offcanvas-menu__copyright">
-          @{new Date().getFullYear()} <span>Moonex</span>. All Rights Reserved.{" "}
-          <br />
-          Development by{" "}
-          <span>
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ib-themes
-            </a>
-          </span>
-          .
+          @{new Date().getFullYear()} <span>Locals Taproom</span>. All Rights
+          Reserved. <br />.
         </p>
         <Social />
       </div>

@@ -5,62 +5,61 @@ import Image from "next/image";
 const brandContent = [
   {
     delayAnimation: "0",
-    hoverBg: "#fcf8f4",
-    imgHeight: "85px",
-    imgName: "image-1",
-    title: "Zeplin",
+    hoverBg: "#F3DF4D",
+    imgHeight: "100px",
+    imgName: "man-rock",
+    title: "Man Rock",
   },
   {
     delayAnimation: "100",
     hoverBg: "#f3f7fc",
-    imgHeight: "78px",
-    imgName: "image-2",
-    title: "Dropbox",
+    imgHeight: "100px",
+    imgName: "tdne",
+    title: "There Does Not Exist",
   },
   {
     delayAnimation: "200",
     hoverBg: "#f9fcf3",
-    imgHeight: "90px",
-    imgName: "image-3",
-    title: "Shopify",
+    imgHeight: "100px",
+    imgName: "humdinger",
+    title: "Humdinger",
   },
   {
     delayAnimation: "300",
     hoverBg: "#f9f9f9",
-    imgHeight: "90px",
-    imgName: "image-4",
-    title: "Slack",
+    imgHeight: "100px",
+    imgName: "liquid-gravity",
+    title: "Liquid Gravity",
   },
   {
     delayAnimation: "400",
     hoverBg: "#fdf4fb",
-    imgHeight: "62px",
-    imgName: "image-5",
-    title: "WooCommerce",
-  },
-  {
-    delayAnimation: "500",
-    hoverBg: "#fdf4fb",
-    imgHeight: "77px",
-    imgName: "image-6",
-    title: "InvisionApp",
+    imgHeight: "100px",
+    imgName: "matthews-vineyard",
+    title: "Matthew's Vineyard",
   },
 ];
 
 const Brand = () => {
   return (
-    <div className="row" style={{ "--bs-gutter-y": "2rem" }}>
+    <div
+      className="row justify-content-center"
+      style={{ "--bs-gutter-y": "2rem" }}
+    >
       {brandContent.map((item, i) => (
-        <div className="col-6 col-md-3 col-lg-2" key={i}>
+        <div
+          className="col-6 col-md-5 col-lg-2 d-flex align-items-center"
+          key={i}
+        >
           {/* <!--Animated Block--> */}
           <div
-            className="ptf-animated-block"
+            className="ptf-animated-block w-100"
             data-aos="fade"
             data-aos-delay={item.delayAnimation}
           >
             {/* <!--Partner Box--> */}
             <div
-              className="ptf-partner-box"
+              className="ptf-partner-box mx-auto"
               style={{
                 "--ptf-hover-background": item.hoverBg,
                 "--ptf-image-height": item.imgHeight,
@@ -75,8 +74,8 @@ const Brand = () => {
                     height: "90px",
                     objectFit: "contain",
                   }}
-                  src={`/assets/img/root/partners/${item.imgName}.png`}
-                  alt="Zeplin"
+                  src={`/assets/img/root/on-tap/${item.imgName}.png`}
+                  alt={item.title}
                   loading="lazy"
                 />
               </div>

@@ -16,8 +16,8 @@
   background-size: 565px 340px;
 
   .ptf-footer__top {
-    padding-top: px2rem(150px);
-    padding-bottom: px2rem(40px);
+    padding-top: px2rem(50px);
+    padding-bottom: px2rem(10px);
 
     @include mq("medium") {
       padding-top: px2rem(75px);
