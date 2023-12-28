@@ -37,9 +37,10 @@ const HomeDefault = () => {
             <section className="has-accent-1-background">
               {/* <!--Spacer--> */}
               <div
-                className="ptf-spacer"
+                className="d-lg-block ptf-spacer"
                 style={{ "--ptf-xxl": "15rem" }}
               ></div>
+
               <div className="container-xxl">
                 <HeroDefault />
               </div>

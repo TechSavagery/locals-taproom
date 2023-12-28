@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import { React, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -172,6 +172,12 @@ const menuContent = [
 const MobileMenu = () => {
   let currentPage = "";
   const pathname = usePathname();
+  const [toggled, setToggled] = useState(false);
+
+  const handleMenuItemClick = () => {
+    // Collapse the sidebar
+    setToggled(false);
+  };
 
   currentPage = pathname.split("-")[0].split("/")[1];
 
@@ -187,7 +193,7 @@ const MobileMenu = () => {
   return (
     <>
       <div className="ptf-offcanvas-menu__navigation">
-        <ProSidebar>
+        <ProSidebar toggled={toggled}>
           <SidebarContent>
             <Menu className="sidebar-menu_wrapper">
               {menuContent.map((item, i) => (
@@ -197,7 +203,7 @@ const MobileMenu = () => {
                   key={i}
                 >
                   {item.dropDownItems.map((val, i) => (
-                    <MenuItem key={i}>
+                    <MenuItem onClick={handleMenuItemClick} key={i}>
                       <Link
                         className={
                           val.routerPath == pathname ? "active-page" : ""
