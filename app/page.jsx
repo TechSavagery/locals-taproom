@@ -17,7 +17,7 @@ import OnTap from "@/components/service/OnTap";
 import ImageGridFour from "../components/image-grid/ImageGridFour";
 
 export const metadata = {
-  title: "Home Default || Moonex Portfolio and Agency NextJS Template",
+  title: "Locals Taproom || Avila Beach, CA",
 };
 
 const HomeDefault = () => {
@@ -44,7 +44,8 @@ const HomeDefault = () => {
               <div className="container-xxl">
                 <HeroDefault />
               </div>
-              {/* <!--Spacer--> */}
+              {/* <!--Spacer--> */}npm run dev
+
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "12.5rem", "--ptf-md": "6.25rem" }}
