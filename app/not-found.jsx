@@ -1,9 +1,6 @@
-
-
-
 import Image from "next/image";
 import Link from "next/link";
-import HeaderDefault from "../components/header/HeaderDefault";
+import HeaderHomeDefault from "../components/header/HeaderHomeDefault";
 import CopyRight from "../components/footer/copyright/CopyRight";
 import Footer from "../components/footer/Footer";
 
@@ -14,7 +11,7 @@ export const metadata = {
 const NotFound = () => {
   return (
     <>
-      <HeaderDefault />
+      <HeaderHomeDefault />
       {/* End Header */}
 
       <div className="ptf-main">

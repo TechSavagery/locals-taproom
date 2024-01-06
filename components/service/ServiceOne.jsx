@@ -14,10 +14,6 @@ const ServiceOne = () => {
         >
           {/* <!--Services Box--> */}
           <div className="ptf-service-box">
-            <Link
-              href={`/service/${val.id}`}
-              className="ptf-service-box__link"
-            ></Link>
             <div className="ptf-service-box__icon">
               <i className={val.icon}></i>
             </div>

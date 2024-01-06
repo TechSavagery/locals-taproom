@@ -123,7 +123,7 @@ const HeroDefault = () => {
                 {/* <!--Button--> */}
                 <a
                   className="ptf-btn ptf-btn--primary ptf-btn--inversed"
-                  href="about-us.html"
+                  href="#our-story"
                   target="_self"
                 >
                   Learn More

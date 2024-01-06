@@ -44,7 +44,7 @@ const HomeDefault = () => {
               <div className="container-xxl">
                 <HeroDefault />
               </div>
-              {/* <!--Spacer--> */}npm run dev
+              {/* <!--Spacer--> */}
 
               <div
                 className="ptf-spacer"
