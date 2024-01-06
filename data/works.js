@@ -5,13 +5,6 @@ export const portfolioContent = [
     categorie: "UI/UX",
     title: "Liarch Architecture Firm",
   },
-
-  {
-    id: 10,
-    img: "/assets/img/portfolio/lifestyle-4.jpg",
-    categorie: "UI/UX",
-    title: "Liarch Architecture Firm",
-  },
   {
     id: 11,
     img: "/assets/img/portfolio/lifestyle-5.jpg",
