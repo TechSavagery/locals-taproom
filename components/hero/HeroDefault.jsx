@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import ImageGridFive from "../../components/image-grid/ImageGridFour";
+import ImageGridSix from "../../components/image-grid/ImageGridSix";
 const heroContent = {
   title: "Locals Taproom",
   subTitle1: "Avila Beach",
@@ -18,7 +18,7 @@ const HeroDefault = () => {
     <div className="row">
       <div className="col-xl-9">
         <div className="d-xl-none d-flex justify-content-center">
-          <ImageGridFive />
+          <ImageGridSix />
         </div>
         {/* <!--Animated Block--> */}
         <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">

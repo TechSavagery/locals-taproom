@@ -216,6 +216,7 @@ const MobileMenu = () => {
                   ))}
                 </SubMenu>
               ))}
+              <MenuItem> Documentation </MenuItem>
             </Menu>
           </SidebarContent>
         </ProSidebar>
