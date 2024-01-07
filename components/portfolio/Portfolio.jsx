@@ -11,7 +11,7 @@ import { portfolioContent } from "../../data/works";
 const Portfolio = () => {
   const settings = {
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3500,
     dots: false,
     arrow: true,
     infinite: true,
