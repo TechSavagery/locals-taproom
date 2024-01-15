@@ -40,4 +40,20 @@ export const onTapContent = [
     descriptions: `In 2011, the Will family lost their son Matthew to leukemia. In his memory, they established Matthew's Vineyard on their two-acre land, where they grow Pinot Noir and Chardonnay. This vineyard, where Matthew spent his last years, serves as a tribute to his life, with proceeds supporting leukemia research at Stanford Hospital. Our taproom proudly serves wines from this meaningful vineyard, inviting patrons to honor Matthew's legacy and contribute to a cause close to the Will family's heart.`,
     delayAnimation: "400",
   },
+  {
+    id: 6,
+    anchor: "antigua-brewing",
+    subTitle: "BEER",
+    title: "Antigua Brewing Company",
+    descriptions: `Originating from San Luis Obispo, California, this family-run brewery is celebrated for its high-quality, locally-inspired brews. They use hops from their family farm, bringing a unique local essence to their beer. In their downtown taproom, Antigua Brewing pairs their beers with housemade food, creating a perfect blend for the palate. Join us to savor the distinct flavors and community spirit of Antigua Brewing Company, a true reflection of their dedication to the craft beer journey.`,
+    delayAnimation: "500",
+  },
+  {
+    id: 7,
+    anchor: "kelsey-sea-canyon",
+    subTitle: "CIDER",
+    title: " Kelsey See Canyon Vineyards",
+    descriptions: `Nestled in San Luis Obispo's See Canyon, this family-owned winery is celebrated for its innovative Apple Chardonnay - a blend of grapes and local apples. The vineyard's picturesque setting and family-friendly ambiance, complete with resident peacocks, make their ciders a true taste of the region's natural beauty and agricultural heritage. Join us to experience the unique flavors of Kelsey See Canyon's ciders, a testament to their commitment to quality and innovation.`,
+    delayAnimation: "600",
+  },
 ];

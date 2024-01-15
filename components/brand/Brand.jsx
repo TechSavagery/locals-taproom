@@ -38,6 +38,20 @@ const brandContent = [
     imgName: "matthews-vineyard",
     title: "Matthew's Vineyard",
   },
+  {
+    delayAnimation: "500",
+    hoverBg: "#006B5D",
+    imgHeight: "100px",
+    imgName: "antigua-brewing",
+    title: "Antigua Brewing Company",
+  },
+  {
+    delayAnimation: "600",
+    hoverBg: "#F3DF4D",
+    imgHeight: "100px",
+    imgName: "kelsea-sea-canyon-vineyards",
+    title: "Kelsea Sea Canyon Vineyards",
+  },
 ];
 
 const Brand = () => {
@@ -48,7 +62,7 @@ const Brand = () => {
     >
       {brandContent.map((item, i) => (
         <div
-          className="col-6 col-md-5 col-lg-2 d-flex align-items-center"
+          className="col-6 col-md-5 col-lg-3 d-flex align-items-center"
           key={i}
         >
           {/* <!--Animated Block--> */}
