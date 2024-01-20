@@ -137,8 +137,7 @@ const ContactForm = () => {
 
         <label className="ptf-checkbox" htmlFor="acceptTerms">
           <span className="ptf-checkbox__checkmark"></span>I agree to receive
-          occasional MoonexLabs newsletters containing news & advice on creating
-          personal and business progress via digital tech.
+          occasional Locals Taproom emails about promotions and special events.
         </label>
         {errors.acceptTerms && (
           <div className="invalid-feedback">{errors.acceptTerms?.message}</div>

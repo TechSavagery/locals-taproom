@@ -16,70 +16,6 @@ import Social from "../../social/Social";
 
 const menuContent = [
   {
-    name: "Home",
-    page: "home",
-    dropDownItems: [
-      // {
-      //   name: "Home Default",
-      //   routerPath: "/home-default",
-      // },
-      // {
-      //   name: "Home Studio",
-      //   routerPath: "/home-studio",
-      // },
-      // {
-      //   name: "Home Agency",
-      //   routerPath: "/home-agency",
-      // },
-      // {
-      //   name: "Home Minimal",
-      //   routerPath: "/home-minimal",
-      // },
-      // {
-      //   name: "Home Dark",
-      //   routerPath: "/home-dark",
-      // },
-      // {
-      //   name: "Home Freelancer",
-      //   routerPath: "/home-freelancer",
-      // },
-      // {
-      //   name: "Home Trending",
-      //   routerPath: "/home-trending",
-      // },
-      // {
-      //   name: "Home Modern",
-      //   routerPath: "/home-modern",
-      // },
-    ],
-  },
-  {
-    name: "Our Story",
-    page: "works",
-    dropDownItems: [
-      // {
-      //   name: "Works Grid",
-      //   routerPath: "/works-grid",
-      // },
-      // {
-      //   name: "Works Masonry",
-      //   routerPath: "/works-masonry",
-      // },
-      // {
-      //   name: "Works Listing",
-      //   routerPath: "/works-listing",
-      // },
-      // {
-      //   name: "Works Carousel",
-      //   routerPath: "/works-carousel",
-      // },
-      // {
-      //   name: "Works Showcase",
-      //   routerPath: "/works/3",
-      // },
-    ],
-  },
-  {
     name: "On Tap",
     page: "#",
     dropDownItems: [
@@ -104,68 +40,6 @@ const menuContent = [
         routerPath: "/#on-tap-matthews-vineyard",
       },
     ],
-  },
-  {
-    name: "Amenities",
-    activeClass: "",
-    menuClass: "",
-    page: "/#amenities",
-
-    dropDownItems: [],
-  },
-  {
-    name: "Merch",
-    page: "/#merch",
-    dropDownItems: [
-      // {
-      //   name: "About Us",
-      //   routerPath: "/about-us",
-      // },
-      // {
-      //   name: "About Me",
-      //   routerPath: "/about-me",
-      // },
-      // {
-      //   name: "Services",
-      //   routerPath: "/service",
-      // },
-      // {
-      //   name: "Service Details",
-      //   routerPath: "/service/5",
-      // },
-      // {
-      //   name: "Pricing",
-      //   routerPath: "/pricing",
-      // },
-      // {
-      //   name: "Team",
-      //   routerPath: "/team",
-      // },
-      // {
-      //   name: "FAQ",
-      //   routerPath: "/faq",
-      // },
-      // {
-      //   name: "Contact",
-      //   routerPath: "/contact",
-      // },
-      // {
-      //   name: "Page 404",
-      //   routerPath: "/404",
-      // },
-      // {
-      //   name: "Coming Soon",
-      //   routerPath: "/coming-soon",
-      // },
-    ],
-  },
-  {
-    name: "Contact Us",
-    activeClass: "",
-    menuClass: "",
-    page: "/contact",
-
-    dropDownItems: [],
   },
 ];
 
@@ -196,6 +70,14 @@ const MobileMenu = () => {
         <ProSidebar toggled={toggled}>
           <SidebarContent>
             <Menu className="sidebar-menu_wrapper">
+              <MenuItem className="">
+                {" "}
+                <a href="/">Home</a>
+              </MenuItem>
+              <MenuItem className="">
+                {" "}
+                <a href="/#our-story">Our Story</a>
+              </MenuItem>
               {menuContent.map((item, i) => (
                 <SubMenu
                   className={item.page == currentPage ? "active-page" : ""}
@@ -216,7 +98,18 @@ const MobileMenu = () => {
                   ))}
                 </SubMenu>
               ))}
-              <MenuItem> Documentation </MenuItem>
+              <MenuItem className="">
+                {" "}
+                <a href="/#amenities">Amenities</a>
+              </MenuItem>
+              <MenuItem className="">
+                {" "}
+                <a href="/#merch">Merch</a>
+              </MenuItem>
+              <MenuItem className="">
+                {" "}
+                <a href="/contact">Contact</a>
+              </MenuItem>
             </Menu>
           </SidebarContent>
         </ProSidebar>

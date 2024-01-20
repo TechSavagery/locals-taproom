@@ -42,6 +42,10 @@ const Contact = () => {
                       className="ptf-spacer"
                       style={{ "--ptf-xxl": "3rem", "--ptf-md": "2.5rem" }}
                     ></div>
+                        <div
+                      className="ptf-spacer"
+                      style={{ "--ptf-xxl": "3rem", "--ptf-md": "2.5rem" }}
+                    ></div>
 
                     <Social />
                     {/* <!--Social Icon--> */}
@@ -75,9 +79,9 @@ const Contact = () => {
                     data-aos="fade"
                     data-aos-delay="300"
                   >
-                    <h5 className="fz-14 text-uppercase has-3-color fw-normal">
+                    {/* <h5 className="fz-14 text-uppercase has-3-color fw-normal">
                       Tell us about your project and goals.
-                    </h5>
+                    </h5> */}
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"

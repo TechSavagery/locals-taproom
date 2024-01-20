@@ -8,6 +8,7 @@ import "photoswipe/dist/photoswipe.css";
 import "aos/dist/aos.css";
 import "react-pro-sidebar/dist/css/styles.css";
 import dynamic from "next/dynamic";
+import { Analytics } from "@vercel/analytics/react";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
             outerScale={1.2}
           />
         )}
-        {showCursor && <ScrollToTop />}{" "}
+        {showCursor && <ScrollToTop />} <Analytics />
       </body>
     </html>
   );
