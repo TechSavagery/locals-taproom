@@ -81,7 +81,7 @@ export const serviceContent = [
     icon: "lnil lnil-dinner",
     titlePart1: "LOCAL",
     titlePart2: "DELIGHTS",
-    descriptions: `Savor a selection of local snacks, carefully curated to complement your drink. For heartier fare, we've partnered with nearby restaurants to deliver their culinary creations directly to your seat.`,
+    descriptions: `Outside food wewlcome! We've partnered with nearby restaurants to deliver their culinary creations directly to your seat. 10% OFF Mission Pizza when you dine at Local's Taproom!`,
   },
   {
     id: 12,
